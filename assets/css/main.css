@@ -4,12 +4,12 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-    --default-font: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto,
-        'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
-    --heading-font: 'Raleway', sans-serif;
-    --nav-font: 'Nunito', sans-serif;
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Nunito", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -17,7 +17,7 @@
     --background-color: #ffffff; /* Background color for the entire website, including individual sections */
     --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
     --heading-color: #111111; /* Color for headings, subheadings and title throughout the website */
-    --accent-color: #f2aa4cff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --accent-color: #E3170AFF; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
     --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
     --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -25,11 +25,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
     --nav-color: #444444; /* The default color of the main navmenu links */
-    --nav-hover-color: #f2aa4cff; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-hover-color: #E3170AFF; /* Applied to main navmenu links when they are hovered over or active */
     --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
     --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
     --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #f2aa4cff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+    --nav-dropdown-hover-color: #E3170AFF; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -48,7 +48,7 @@
 }
 
 .accent-background {
-    --background-color: #f2aa4cff;
+    --background-color: #E3170AFF;
     --default-color: #ffffff;
     --heading-color: #ffffff;
     --accent-color: #ffffff;
@@ -122,7 +122,7 @@ h6 {
 }
 
 .php-email-form .loading:before {
-    content: '';
+    content: "";
     display: inline-block;
     border-radius: 50%;
     width: 24px;
@@ -581,7 +581,7 @@ h6 {
     border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type='email'] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
     border: 0;
     padding: 4px;
     width: 100%;
@@ -589,11 +589,11 @@ h6 {
     color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type='email']:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
     outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type='submit'] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
     border: 0;
     font-size: 16px;
     padding: 0 20px;
@@ -604,7 +604,7 @@ h6 {
     border-radius: 0 4px 4px 0;
 }
 
-.footer .footer-newsletter .newsletter-form input[type='submit']:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -636,7 +636,7 @@ h6 {
 }
 
 #preloader:before {
-    content: '';
+    content: "";
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
@@ -731,7 +731,7 @@ h6 {
 }
 
 .page-title .breadcrumbs ol li + li::before {
-    content: '/';
+    content: "/";
     display: inline-block;
     padding-right: 10px;
     color: color-mix(in srgb, var(--default-color), transparent 70%);
@@ -775,7 +775,7 @@ section,
 }
 
 .section-title h2:after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 50px;
@@ -1698,7 +1698,7 @@ section,
 }
 
 .portfolio-details .portfolio-info h3:after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 50px;
@@ -2117,7 +2117,7 @@ section,
 }
 
 .blog-details .content blockquote:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -2205,7 +2205,7 @@ section,
 .blog-details .meta-bottom .tags li + li::before {
     padding-right: 6px;
     color: var(--default-color);
-    content: ',';
+    content: ",";
 }
 
 .blog-details .meta-bottom .share {
@@ -2418,8 +2418,8 @@ section,
     padding-bottom: 8px;
 }
 
-.contact .php-email-form input[type='text'],
-.contact .php-email-form input[type='email'],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
     color: var(--default-color);
     background-color: var(--surface-color);
@@ -2429,20 +2429,20 @@ section,
     border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type='text']:focus,
-.contact .php-email-form input[type='email']:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
     border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type='text']::placeholder,
-.contact .php-email-form input[type='email']::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
     color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form input[type='text'],
-.contact .php-email-form input[type='email'] {
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"] {
     height: 48px;
     padding: 10px 15px;
 }
@@ -2452,7 +2452,7 @@ section,
     height: 290px;
 }
 
-.contact .php-email-form button[type='submit'] {
+.contact .php-email-form button[type="submit"] {
     background: var(--accent-color);
     color: var(--contrast-color);
     border: 0;
@@ -2461,7 +2461,7 @@ section,
     border-radius: 4px;
 }
 
-.contact .php-email-form button[type='submit']:hover {
+.contact .php-email-form button[type="submit"]:hover {
     background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
 }
 
@@ -2539,7 +2539,7 @@ section,
     transition: 0.3s;
 }
 
-.search-widget form input[type='text'] {
+.search-widget form input[type="text"] {
     border: 0;
     padding: 4px 10px;
     border-radius: 4px;
@@ -2548,7 +2548,7 @@ section,
     color: var(--default-color);
 }
 
-.search-widget form input[type='text']:focus {
+.search-widget form input[type="text"]:focus {
     outline: none;
 }
 
@@ -2662,7 +2662,7 @@ section,
 }
 
 .cookie-wrapper * {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .cookie-wrapper .show {
@@ -2673,12 +2673,12 @@ section,
     display: none;
 }
 header i {
-    color: #f2aa4cff;
+    color: #E3170AFF;
     font-size: 32px;
     text-align: center;
 }
 header h2 {
-    color: #f2aa4cff;
+    color: #E3170AFF;
     font-weight: 500;
     text-align: center;
 }
@@ -2686,7 +2686,7 @@ header h2 {
     text-align: center;
 }
 .data p a {
-    color: #f2aa4cff;
+    color: #E3170AFF;
     text-decoration: none;
     text-align: center !important;
 }
@@ -2698,10 +2698,10 @@ header h2 {
     text-align: center;
 }
 .buttons .cookie-button {
-    border: 2px solid #f2aa4cff;
+    border: 2px solid #E3170AFF;
     color: #fff;
     padding: 8px 0;
-    background: #f2aa4cff;
+    background: #E3170AFF;
     cursor: pointer;
     width: calc(100% / 2 - 10px);
     transition: all 0.5s ease;
@@ -2710,14 +2710,14 @@ header h2 {
 }
 .buttons #acceptBtn:hover {
     background-color: transparent;
-    color: #f2aa4cff;
+    color: #E3170AFF;
 }
 #declineBtn {
     background-color: #fff;
-    color: #f2aa4cff;
+    color: #E3170AFF;
 }
 #declineBtn:hover {
-    background-color: #f2aa4cff;
+    background-color: #E3170AFF;
     color: #fff;
 }
 /* Footer Style */
